@@ -1,22 +1,70 @@
-# virtual environment
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+
+# ========================
+# Virtual environment
+# ========================
 .venv/
 venv/
+ENV/
+env/
 
-# python cache
-__pycache__/
-*.pyc
+# ========================
+# Jupyter / Notebooks
+# ========================
+.ipynb_checkpoints/
 
-# datasets (великі файли)
-data/raw/
-data/processed/*.pred.csv
-
-# models
-models/*.pkl
-
-# reports images (можна залишити, але краще без PNG)
-reports/**/*.png
-
-# OS / IDE
+# ========================
+# OS / Editors
+# ========================
+.DS_Store
+Thumbs.db
 .vscode/
 .idea/
-.DS_Store
+
+# ========================
+# Logs
+# ========================
+*.log
+
+# ========================
+# Data (RAW & large files)
+# ========================
+data/raw/
+data/**/*.pcap
+data/**/*.pcapng
+data/**/*.zip
+data/**/*.7z
+
+# Якщо хочеш зберігати processed CSV — ЗАЛИШАЄМО
+# data/processed/  <-- НЕ ігноруємо
+
+# ========================
+# Reports (optional)
+# ========================
+# Якщо графіків дуже багато і важкі:
+# reports/**/*.png
+
+# ========================
+# Streamlit cache
+# ========================
+.streamlit/
+
+# ========================
+# Model artifacts (optional)
+# ========================
+# Якщо моделі великі, можна ігнорувати:
+# models/*.pkl
+
+# ========================
+# PowerShell temp
+# ========================
+*.ps1.bak
