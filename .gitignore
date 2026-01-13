@@ -1,0 +1,22 @@
+# virtual environment
+.venv/
+venv/
+
+# python cache
+__pycache__/
+*.pyc
+
+# datasets (великі файли)
+data/raw/
+data/processed/*.pred.csv
+
+# models
+models/*.pkl
+
+# reports images (можна залишити, але краще без PNG)
+reports/**/*.png
+
+# OS / IDE
+.vscode/
+.idea/
+.DS_Store
